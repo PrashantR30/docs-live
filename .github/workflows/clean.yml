@@ -53,7 +53,7 @@ jobs:
 
       - name: Deploy New Version with Mike
         run: |
-          NEW_VERSION=v0.1.0
+          NEW_VERSION=v0.1.2
           mike deploy --update-aliases $NEW_VERSION latest
           mike set-default latest
           git push origin gh-pages
